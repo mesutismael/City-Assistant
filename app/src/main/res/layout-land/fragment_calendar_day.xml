@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/general_theme"
+        android:paddingLeft="@dimen/fragment_padding_left_right"
+        android:paddingRight="@dimen/fragment_padding_left_right"
+        android:paddingTop="@dimen/fragment_padding_top_bottom"
+        android:paddingBottom="@dimen/fragment_padding_top_bottom">
+
+        <ImageView
+            android:id="@+id/imageView_previousDay"
+            android:layout_width="@dimen/calendar_day_arrow"
+            android:layout_height="@dimen/calendar_day_arrow"
+            android:src="@drawable/arrow_left_white"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/imageView_nextDay"
+            android:layout_width="@dimen/calendar_day_arrow"
+            android:layout_height="@dimen/calendar_day_arrow"
+            android:src="@drawable/arrow_right_white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/general_text_white"
+            android:textSize="@dimen/calendar_day_day_text"
+            app:typeface="montserrat_hairline"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/textView_day"
+            android:textColor="@color/general_text_white"
+            android:textSize="@dimen/calendar_day_month_text"
+            app:typeface="montserrat_light"
+            app:capFirstChar="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/calendar_day_padding_vertical"
+        android:paddingLeft="@dimen/calendar_day_padding_horizontal"
+        android:paddingRight="@dimen/calendar_day_padding_horizontal"
+        android:background="@color/general_background_white">
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_dayOfWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:typeface="montserrat_regular"
+            app:capFirstChar="true"
+            android:paddingLeft="@dimen/calendar_day_of_week_padding_left"
+            android:paddingBottom="@dimen/calendar_day_of_week_padding_bottom"
+            android:textSize="@dimen/calendar_day_of_week_text"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_dayEntries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/calendar_day_padding_vertical"
+            android:clipToPadding="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

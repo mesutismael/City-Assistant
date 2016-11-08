@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/list_padding_vertical_outer"
+        android:paddingBottom="@dimen/list_padding_vertical_outer"
+        android:paddingLeft="@dimen/list_padding_horizontal_outer"
+        android:paddingRight="@dimen/list_padding_horizontal_outer"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/chat_message_background">
+
+        <smartassist.appreciate.be.smartassist.views.EditText
+            android:id="@+id/editText_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/chat_message_hint"
+            android:maxHeight="@dimen/chat_message_max_height"
+            android:inputType="textMultiLine|textCapSentences"
+            android:paddingTop="@dimen/fragment_padding_top_bottom"
+            android:paddingBottom="@dimen/fragment_padding_top_bottom"
+            android:paddingLeft="@dimen/fragment_padding_left_right"
+            android:paddingRight="@dimen/fragment_padding_left_right"
+            android:background="@null"/>
+
+        <ImageView
+            android:id="@+id/imageView_send"
+            android:layout_width="@dimen/chat_send"
+            android:layout_height="@dimen/chat_send"
+            android:padding="@dimen/chat_send_padding"
+            android:src="@drawable/ic_send"
+            android:layout_marginTop="@dimen/chat_send_margin_vertical"
+            android:layout_marginBottom="@dimen/chat_send_margin_vertical"
+            android:layout_marginRight="@dimen/chat_send_margin_horizontal"/>
+
+        <ImageView
+            android:id="@+id/imageView_options"
+            android:layout_width="@dimen/chat_send"
+            android:layout_height="@dimen/chat_send"
+            android:padding="@dimen/chat_send_padding"
+            android:src="@drawable/chat_options"
+            android:layout_marginTop="@dimen/chat_send_margin_vertical"
+            android:layout_marginBottom="@dimen/chat_send_margin_vertical"
+            android:layout_marginRight="@dimen/chat_send_margin_horizontal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

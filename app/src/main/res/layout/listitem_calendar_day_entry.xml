@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/layout_timeLine"
+        android:layout_width="@dimen/calendar_day_time_line_indicator"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="@dimen/calendar_day_time_line_padding">
+
+        <View
+            android:id="@+id/view_indicatorTop"
+            android:layout_width="@dimen/calendar_day_time_line_width"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/calendar_time_line"/>
+
+        <ImageView
+            android:id="@+id/imageView_indicator"
+            android:layout_width="@dimen/calendar_day_time_line_indicator"
+            android:layout_height="@dimen/calendar_day_time_line_indicator"
+            android:src="@drawable/timeline_default"/>
+
+        <View
+            android:id="@+id/view_indicatorBottom"
+            android:layout_width="@dimen/calendar_day_time_line_width"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/calendar_time_line"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/calendar_day_item_padding"
+            android:paddingBottom="@dimen/calendar_day_item_padding"
+            android:gravity="center_vertical">
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/calendar_time_min_width"
+                app:typeface="montserrat_light"/>
+
+            <View
+                android:id="@+id/view_habitant"
+                android:layout_width="@dimen/calendar_habitant_circle"
+                android:layout_height="@dimen/calendar_habitant_circle"
+                android:layout_marginLeft="@dimen/calendar_habitant_padding_outer"
+                android:layout_marginRight="@dimen/calendar_habitant_padding_outer"/>
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:typeface="montserrat_light"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_divider_height"
+            android:background="@color/calendar_day_list_divider"/>
+
+    </LinearLayout>
+
+</LinearLayout>

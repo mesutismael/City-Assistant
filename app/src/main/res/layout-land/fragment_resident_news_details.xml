@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/fragment_padding_left_right"
+    android:layout_marginRight="@dimen/fragment_padding_left_right"
+    android:layout_marginBottom="@dimen/fragment_padding_top_bottom"
+    android:layout_marginTop="@dimen/fragment_padding_top_bottom"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/main_tile_corners"
+    app:cardElevation="@dimen/list_item_elevation"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageView_news"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius_top_left="@dimen/main_tile_corners"
+                app:riv_corner_radius_bottom_left="@dimen/main_tile_corners"/>
+
+            <LinearLayout
+                android:id="@+id/layout_back"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_bar_height"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@color/top_bar_transparent">
+
+                <ImageView
+                    android:layout_width="@dimen/top_bar_back_image_width"
+                    android:layout_height="@dimen/top_bar_back_image_height"
+                    android:paddingLeft="@dimen/fragment_padding_left_right"
+                    android:paddingRight="@dimen/fragment_padding_left_right"
+                    android:paddingTop="@dimen/fragment_padding_top_bottom"
+                    android:paddingBottom="@dimen/fragment_padding_top_bottom"
+                    android:src="@drawable/ic_back"/>
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/top_bar_text"
+                    android:textSize="@dimen/top_bar_text"
+                    android:text="@string/top_bar_back"
+                    app:typeface="montserrat_light"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:padding="@dimen/news_item_padding"
+            android:scrollbarStyle="outsideOverlay"
+            android:clipToPadding="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <smartassist.appreciate.be.smartassist.views.TextView
+                        android:id="@+id/textView_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:typeface="montserrat_light"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/news_item_icon"
+                        android:layout_height="@dimen/news_item_icon"
+                        android:src="@drawable/ic_mail_blue"/>
+
+                </LinearLayout>
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_date"
+                    android:textSize="@dimen/news_item_title_text"
+                    android:paddingBottom="@dimen/news_item_title_padding_bottom"
+                    app:typeface="montserrat_light"/>
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_title"
+                    app:typeface="montserrat_light"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

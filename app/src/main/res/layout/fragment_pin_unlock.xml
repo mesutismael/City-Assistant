@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/top_bar"
+    android:paddingTop="@dimen/fragment_padding_top_bottom"
+    android:paddingBottom="@dimen/fragment_padding_top_bottom"
+    android:paddingLeft="@dimen/fragment_padding_left_right"
+    android:paddingRight="@dimen/fragment_padding_left_right"
+    android:gravity="center_horizontal"
+    android:clipChildren="false">
+
+    <smartassist.appreciate.be.smartassist.views.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/pin_padding_inner"
+        android:text="@string/pin_title"
+        android:textColor="@color/general_text_white"
+        android:textSize="@dimen/pin_title_text"
+        app:typeface="montserrat_light"/>
+
+    <LinearLayout
+        android:id="@+id/layout_pinImages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/pin_padding_inner"
+        android:clipChildren="false">
+
+        <ImageView
+            android:id="@+id/imageView_pin1"
+            android:layout_width="@dimen/pin_circle"
+            android:layout_height="@dimen/pin_circle"
+            android:background="@drawable/shape_button_pin_oval"
+            android:layout_marginRight="@dimen/pin_padding_inner"/>
+
+        <ImageView
+            android:id="@+id/imageView_pin2"
+            android:layout_width="@dimen/pin_circle"
+            android:layout_height="@dimen/pin_circle"
+            android:background="@drawable/shape_button_pin_oval"
+            android:layout_marginRight="@dimen/pin_padding_inner"/>
+
+        <ImageView
+            android:id="@+id/imageView_pin3"
+            android:layout_width="@dimen/pin_circle"
+            android:layout_height="@dimen/pin_circle"
+            android:background="@drawable/shape_button_pin_oval"
+            android:layout_marginRight="@dimen/pin_padding_inner"/>
+
+        <ImageView
+            android:id="@+id/imageView_pin4"
+            android:layout_width="@dimen/pin_circle"
+            android:layout_height="@dimen/pin_circle"
+            android:background="@drawable/shape_button_pin_oval"/>
+
+    </LinearLayout>
+
+    <smartassist.appreciate.be.smartassist.views.NumPadView
+        android:id="@+id/numPadView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pin_padding_inner">
+
+        <View
+            android:id="@+id/view_center"
+            android:layout_width="@dimen/pin_padding_inner"
+            android:layout_height="@dimen/button_min_height"
+            android:layout_centerHorizontal="true"/>
+
+        <smartassist.appreciate.be.smartassist.views.Button
+            android:id="@+id/button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pin_delete"
+            android:textColor="@color/pin_button_text"
+            android:background="@drawable/selector_button_pin"
+            android:layout_toLeftOf="@id/view_center"
+            app:typeface="montserrat_light"/>
+
+        <smartassist.appreciate.be.smartassist.views.Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pin_cancel"
+            android:textColor="@color/pin_button_text"
+            android:background="@drawable/selector_button_pin"
+            android:layout_toRightOf="@id/view_center"
+            app:typeface="montserrat_light"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

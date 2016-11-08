@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/view_indicatorTop"
+            android:layout_width="@dimen/care_book_item_line_width"
+            android:layout_height="@dimen/care_book_item_line_top_height"
+            android:background="@color/calendar_day_list_divider"/>
+
+        <ImageView
+            android:id="@+id/imageView_smiley"
+            android:layout_width="@dimen/care_book_item_smiley"
+            android:layout_height="@dimen/care_book_item_smiley"/>
+
+        <View
+            android:id="@+id/view_indicatorBottom"
+            android:layout_width="@dimen/care_book_item_line_width"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/calendar_day_list_divider"/>
+
+    </LinearLayout>
+
+    <smartassist.appreciate.be.smartassist.views.BoundedLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/care_item_background"
+        android:layout_marginTop="@dimen/care_book_item_box_margin_vertical"
+        android:layout_marginBottom="@dimen/care_book_item_box_margin_vertical"
+        android:layout_marginLeft="@dimen/care_book_item_box_margin_left"
+        android:paddingLeft="@dimen/care_book_item_box_padding_left"
+        android:paddingTop="@dimen/care_book_item_box_padding"
+        android:paddingRight="@dimen/care_book_item_box_padding"
+        android:paddingBottom="@dimen/care_book_item_box_padding"
+        app:boundedWidth="@dimen/care_book_max_width">
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/care_book_item_view_spacing"
+            android:textSize="@dimen/care_book_text_small"
+            android:textColor="@color/general_text_gray"
+            app:typeface="montserrat_light"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/care_book_item_view_spacing"
+            app:typeface="montserrat_light"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/care_book_text_small"
+            android:textColor="@color/general_text_theme"
+            app:typeface="montserrat_light"/>
+
+    </smartassist.appreciate.be.smartassist.views.BoundedLinearLayout>
+
+</LinearLayout>

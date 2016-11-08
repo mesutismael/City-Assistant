@@ -1,0 +1,11 @@
+Smart Assist release.jsk
+------------------------
+
+Store password:
+smartassist
+
+Alias:
+smartassist
+
+Key password:
+smartassist

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/top_bar"
+              android:paddingLeft="@dimen/screen_saver_clock_padding_left"
+              android:gravity="center">
+
+    <smartassist.appreciate.be.smartassist.views.TextClock
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/screen_saver_time_padding_bottom"
+        android:textColor="@color/general_text_white"
+        android:textSize="@dimen/screen_saver_time_default_text"
+        app:typeface="montserrat_hairline"/>
+
+    <smartassist.appreciate.be.smartassist.views.TextView
+        android:id="@+id/textView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/screen_saver_time_padding"
+        android:paddingRight="@dimen/screen_saver_time_padding"
+        android:textSize="@dimen/screen_saver_date_text"
+        android:textColor="@color/general_text_white"
+        android:gravity="center"
+        app:typeface="montserrat_hairline"/>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView_other"
+        android:layout_width="@dimen/chat_image"
+        android:layout_height="@dimen/chat_image"
+        android:layout_marginRight="@dimen/fragment_padding_left_right"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"/>
+
+    <smartassist.appreciate.be.smartassist.views.BoundedLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:boundedWidth="@dimen/chat_max_width">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/chat_background_other"
+            android:paddingLeft="@dimen/chat_other_box_padding_left"
+            android:paddingTop="@dimen/chat_box_padding"
+            android:paddingRight="@dimen/chat_box_padding"
+            android:paddingBottom="@dimen/chat_box_padding">
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/chat_other_name_text"
+                android:textColor="@color/chat_other_name_text"
+                android:layout_marginBottom="@dimen/chat_other_name_margin_bottom"/>
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/chat_date_text"
+            android:textColor="@color/chat_date_text"
+            android:layout_marginTop="@dimen/chat_date_margin_top"
+            android:layout_marginLeft="@dimen/chat_other_box_padding_left"
+            app:typeface="montserrat_light"/>
+
+    </smartassist.appreciate.be.smartassist.views.BoundedLinearLayout>
+
+</LinearLayout>

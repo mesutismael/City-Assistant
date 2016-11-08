@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/general_theme">
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/list_padding_horizontal_inner"
+            android:paddingRight="@dimen/list_padding_horizontal_inner"
+            android:paddingTop="@dimen/list_padding_vertical_inner"
+            android:paddingBottom="@dimen/list_padding_vertical_inner"
+            android:text="@string/medication_name"
+            android:textColor="@color/general_text_white"
+            app:typeface="montserrat_bold"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/list_padding_horizontal_inner"
+            android:paddingRight="@dimen/list_padding_horizontal_inner"
+            android:paddingTop="@dimen/list_padding_vertical_inner"
+            android:paddingBottom="@dimen/list_padding_vertical_inner"
+            android:text="@string/medication_dose"
+            android:textColor="@color/general_text_white"
+            app:typeface="montserrat_bold"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/list_padding_horizontal_inner"
+            android:paddingRight="@dimen/list_padding_horizontal_inner"
+            android:paddingTop="@dimen/list_padding_vertical_inner"
+            android:paddingBottom="@dimen/list_padding_vertical_inner"
+            android:text="@string/medication_time_1"
+            android:gravity="center"
+            android:textColor="@color/general_text_white"
+            app:typeface="montserrat_bold"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/list_padding_horizontal_inner"
+            android:paddingRight="@dimen/list_padding_horizontal_inner"
+            android:paddingTop="@dimen/list_padding_vertical_inner"
+            android:paddingBottom="@dimen/list_padding_vertical_inner"
+            android:text="@string/medication_time_2"
+            android:gravity="center"
+            android:textColor="@color/general_text_white"
+            app:typeface="montserrat_bold"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/list_padding_horizontal_inner"
+            android:paddingRight="@dimen/list_padding_horizontal_inner"
+            android:paddingTop="@dimen/list_padding_vertical_inner"
+            android:paddingBottom="@dimen/list_padding_vertical_inner"
+            android:text="@string/medication_time_3"
+            android:gravity="center"
+            android:textColor="@color/general_text_white"
+            app:typeface="montserrat_bold"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/list_padding_horizontal_inner"
+            android:paddingRight="@dimen/list_padding_horizontal_inner"
+            android:paddingTop="@dimen/list_padding_vertical_inner"
+            android:paddingBottom="@dimen/list_padding_vertical_inner"
+            android:text="@string/medication_time_4"
+            android:gravity="center"
+            android:textColor="@color/general_text_white"
+            app:typeface="montserrat_bold"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/list_padding_horizontal_inner"
+            android:paddingRight="@dimen/list_padding_horizontal_inner"
+            android:paddingTop="@dimen/list_padding_vertical_inner"
+            android:paddingBottom="@dimen/list_padding_vertical_inner"
+            android:text="@string/medication_time_5"
+            android:gravity="center"
+            android:textColor="@color/general_text_white"
+            app:typeface="montserrat_bold"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/list_padding_horizontal_inner"
+            android:paddingRight="@dimen/list_padding_horizontal_inner"
+            android:paddingTop="@dimen/list_padding_vertical_inner"
+            android:paddingBottom="@dimen/list_padding_vertical_inner"
+            android:text="@string/medication_time_6"
+            android:gravity="center"
+            android:textColor="@color/general_text_white"
+            app:typeface="montserrat_bold"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/list_padding_horizontal_inner"
+            android:paddingRight="@dimen/list_padding_horizontal_inner"
+            android:paddingTop="@dimen/list_padding_vertical_inner"
+            android:paddingBottom="@dimen/list_padding_vertical_inner"
+            android:text="@string/medication_time_7"
+            android:gravity="center"
+            android:textColor="@color/general_text_white"
+            app:typeface="montserrat_bold"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_medication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@id/layout_header"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider_horizontal_dark"
+        android:showDividers="middle"
+        android:layout_below="@id/layout_header">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:divider="@drawable/divider_horizontal"
+            android:showDividers="middle">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="horizontal"
+            android:divider="@drawable/divider_horizontal"
+            android:showDividers="middle">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

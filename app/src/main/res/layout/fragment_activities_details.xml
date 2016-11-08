@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/fragment_padding_top_bottom"
+    android:layout_marginLeft="@dimen/fragment_padding_left_right"
+    android:layout_marginRight="@dimen/fragment_padding_left_right"
+    android:layout_marginTop="@dimen/fragment_padding_top_bottom"
+    app:cardCornerRadius="@dimen/main_tile_corners"
+    app:cardElevation="@dimen/list_item_elevation"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageView_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius_bottom_left="@dimen/main_tile_corners"/>
+
+            <LinearLayout
+                android:id="@+id/layout_back"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_bar_height"
+                android:background="@color/top_bar_transparent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/top_bar_back_image_width"
+                    android:layout_height="@dimen/top_bar_back_image_height"
+                    android:paddingBottom="@dimen/fragment_padding_top_bottom"
+                    android:paddingLeft="@dimen/fragment_padding_left_right"
+                    android:paddingRight="@dimen/fragment_padding_left_right"
+                    android:paddingTop="@dimen/fragment_padding_top_bottom"
+                    android:src="@drawable/ic_back"/>
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/top_bar_back"
+                    android:textColor="@color/top_bar_text"
+                    android:textSize="@dimen/top_bar_text"
+                    app:typeface="montserrat_light"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:padding="@dimen/poi_detail_padding">
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/news_item_title_padding_bottom"
+                android:textSize="@dimen/news_item_title_text"
+                app:typeface="montserrat_light"/>
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_activityType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_title"
+                    android:paddingBottom="@dimen/news_item_title_padding_bottom"
+                    android:text="Evenment"
+                    app:typeface="montserrat_light"/>
+
+                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                    android:id="@+id/keyValueView_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_activityType"
+                    android:layout_marginBottom="@dimen/activity_view_spacing"
+                    app:emptyValue="@string/activity_empty_value"
+                    app:key="@string/activity_description"/>
+
+                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                    android:id="@+id/keyValueView_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/keyValueView_description"
+                    android:layout_marginBottom="@dimen/activity_view_spacing"
+                    app:emptyValue="@string/activity_empty_value"
+                    app:key="@string/activity_location"/>
+
+                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                    android:id="@+id/keyValueView_startDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/keyValueView_location"
+                    android:layout_marginBottom="@dimen/activity_view_spacing"
+                    app:emptyValue="@string/activity_empty_value"
+                    app:key="@string/activity_start_date_time"/>
+
+                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                    android:id="@+id/keyValueView_invoice_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/keyValueView_startDateTime"
+                    android:layout_marginBottom="@dimen/activity_view_spacing"
+                    app:emptyValue="@string/activity_empty_value"
+                    app:key="@string/activity_invoice_price"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

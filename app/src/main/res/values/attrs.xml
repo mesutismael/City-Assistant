@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="typeface" format="enum">
+        <enum name="montserrat_regular" value="1"/>
+        <enum name="montserrat_bold" value="2"/>
+        <enum name="montserrat_black" value="3"/>
+        <enum name="montserrat_light" value="4"/>
+        <enum name="montserrat_hairline" value="5"/>
+    </attr>
+
+    <declare-styleable name="TextView">
+        <attr name="typeface"/>
+        <attr name="capFirstChar" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="EditText">
+        <attr name="typeface"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextClock">
+        <attr name="typeface"/>
+    </declare-styleable>
+
+    <declare-styleable name="Button">
+        <attr name="typeface"/>
+    </declare-styleable>
+
+    <declare-styleable name="ToggleButton">
+        <attr name="typeface"/>
+    </declare-styleable>
+
+    <declare-styleable name="BoundedLinearLayout">
+        <attr name="boundedWidth" format="dimension"/>
+        <attr name="boundedHeight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="KeyValueView">
+        <attr name="key" format="string"/>
+        <attr name="value" format="string"/>
+        <attr name="emptyValue" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="FavoriteButton">
+        <attr name="mfb_animate_favorite" format="boolean" />
+        <attr name="mfb_animate_unfavorite" format="boolean" />
+        <attr name="mfb_padding" format="integer" />
+        <attr name="mfb_favorite_image" format="integer" />
+        <attr name="mfb_not_favorite_image" format="integer" />
+        <attr name="mfb_rotation_duration" format="integer" />
+        <attr name="mfb_rotation_angle" format="integer" />
+        <attr name="mfb_bounce_duration" format="integer" />
+        <attr name="mfb_color" format="enum">
+            <enum name="black" value="0" />
+            <enum name="white" value="1" />
+        </attr>
+        <attr name="mfb_type" format="enum">
+            <enum name="star" value="0" />
+            <enum name="heart" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

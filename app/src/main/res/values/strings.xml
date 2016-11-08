@@ -1,0 +1,193 @@
+<resources>
+
+    <string name="app_name">SmartAssist</string>
+
+    <string name="top_bar_back">Terug</string>
+    <string name="dialog_positive">OK</string>
+
+    <string name="module_poi">In de buurt</string>
+    <string name="module_news">Residentienieuws</string>
+    <string name="module_weather">Weerbericht</string>
+    <string name="module_calendar">Agenda</string>
+    <string name="module_emergency">Contactpersonen</string>
+    <string name="module_photos">Foto\'s</string>
+    <string name="module_rss">Nieuws</string>
+    <string name="module_medication">Medicatie</string>
+    <string name="module_vitals">Vitale waarden</string>
+    <string name="module_carebook">Zorgboekje</string>
+    <string name="module_chat">Chat</string>
+    <string name="module_invoice">Facturatie</string>
+    <string name="module_habitants">Bewonersfiche</string>
+    <string name="module_user_info">Info</string>
+    <string name="module_resident_news">Residentie info</string>
+    <string name="module_open_file">Attachment</string>
+    <string name="module_poi_selection">Info</string>
+    <string name="module_activities">Activiteiten</string>
+
+    <string name="settings_title">Instellingen</string>
+    <string name="settings_start_kiosk">Start kiosk mode</string>
+    <string name="settings_stop_kiosk">Stop kiosk mode</string>
+    <string name="settings_reload_tiles">Modules opnieuw laden</string>
+    <string name="settings_clear_data">Alle data wissen</string>
+    <string name="settings_enable_pin">Pin code vragen bij screensaver (1234)</string>
+    <string name="settings_dialog_progress_title">Data wissen</string>
+    <string name="settings_dialog_progress_message">Even geduld terwijl de data verwijderd wordt.</string>
+    <string name="settings_residence">Residentie %1$s, flat %2$s</string>
+
+    <string name="scan_dialog_title">QR code scannen</string>
+    <string name="scan_dialog_message">Scan de QR code van jouw flat om toegang te krijgen tot de gegevens.\nHeb je geen code?\nVraag je QR-code aan via hello@smartassist.be</string>
+    <string name="scan_dialog_confirm">Scannen!</string>
+    <string name="scan_dialog_error_title">Fout</string>
+    <string name="scan_dialog_error_message">De gescande QR code is niet geldig. Vraag je QR-code aan via hello@smartassist.be</string>
+    <string name="scan_dialog_error_confirm">Probeer opnieuw</string>
+    <string name="scan_dialog_load_error_title">Fout</string>
+    <string name="scan_dialog_load_error_message">De gegevens konden niet gedownload worden. Controleer of er verbinding is met het internet.</string>
+    <string name="scan_dialog_load_error_confirm">Probeer opnieuw</string>
+    <string name="scan_dialog_progress_title">Data laden</string>
+    <string name="scan_dialog_progress_message">Even geduld terwijl de data geladen wordt.</string>
+
+    <string name="api_error_modules">De modules konden niet geladen worden</string>
+    <string name="api_error_flat">De configuratie voor deze flat kon niet geladen worden</string>
+
+    <string name="poi_more">Meer info</string>
+    <string name="poi_phone">Tel:&#160;</string>
+    <string name="poi_opening_times">Openingsuren</string>
+    <string name="poi_opening_time_period">%1$s - %2$s</string>
+    <string name="poi_monday">Maandag</string>
+    <string name="poi_tuesday">Dinsdag</string>
+    <string name="poi_wednesday">Woensdag</string>
+    <string name="poi_thursday">Donderdag</string>
+    <string name="poi_friday">Vrijdag</string>
+    <string name="poi_saturday">Zaterdag</string>
+    <string name="poi_sunday">Zondag</string>
+    <string name="poi_closed">Gesloten</string>
+    <string name="poi_category_all">Alles</string>
+    <string name="poi_description_title">Beschrijving</string>
+
+    <string name="calendar_day">Dag</string>
+    <string name="calendar_week">Week</string>
+    <string name="calendar_month">Maand</string>
+    <string name="calendar_monday_short">MA</string>
+    <string name="calendar_tuesday_short">DI</string>
+    <string name="calendar_wednesday_short">WO</string>
+    <string name="calendar_thursday_short">DO</string>
+    <string name="calendar_friday_short">VR</string>
+    <string name="calendar_saturday_short">ZA</string>
+    <string name="calendar_sunday_short">ZO</string>
+    <string name="calendar_dialog_alarm_title">Alarm</string>
+    <string name="calendar_dialog_unread_title">Nieuwe afspraak</string>
+    <string name="calendar_dialog_description">Herinnering voor uw afspraak op %1$s\n%2$s</string>
+    <string name="calendar_dialog_confirm">OK</string>
+    <string name="calendar_entire_day">Hele dag</string>
+    <string name="calendar_entire_day_line_1">Hele</string>
+    <string name="calendar_entire_day_line_2">dag</string>
+
+    <string name="news_calendar_title">Afspraken</string>
+    <string name="news_dialog_confirm">OK</string>
+    <string name="news_dialog_detail">Meer info</string>
+    <string name="news_period">%1$s - %2$s</string>
+
+    <string name="emergency_doctor">Dokter van wacht</string>
+    <string name="emergency_pharmacist">Apotheek van wacht</string>
+    <string name="emergency_qr_title">QR code</string>
+    <string name="emergency_qr_positive">OK</string>
+
+    <string name="pin_title">Geef je code in</string>
+    <string name="pin_delete">Verwijder</string>
+    <string name="pin_cancel">Annuleer</string>
+
+    <string name="call_incoming_description">Inkomende oproep</string>
+    <string name="call_timer">%1$d:%2$02d</string>
+
+    <string name="care_book_today">Vandaag</string>
+    <string name="care_book_yesterday">Gisteren</string>
+
+    <string name="chat_title">Chat</string>
+    <string name="chat_message_hint">Typ een bericht&#8230;</string>
+    <string name="chat_more">Open chat</string>
+    <string name="chat_state_sending">Verzenden&#8230;</string>
+    <string name="chat_state_error">Verzenden is mislukt. Tik om opnieuw te proberen.</string>
+    <string name="chat_conversation_no_participants">Geen andere contacten in gesprek</string>
+    <string name="chat_contact_picker_title">Selecteer contacten</string>
+    <string name="chat_contact_picker_empty">Er werden geen contacten gevonden.</string>
+    <string name="chat_contact_picker_positive">OK</string>
+    <string name="chat_contact_picker_cancel">Annuleer</string>
+    <string name="chat_notification_title">@string/app_name</string>
+    <string name="chat_notification_message">Er zijn nieuwe ongelezen berichten.</string>
+    <string name="chat_dialog_unread_title">Nieuw bericht</string>
+    <string name="chat_new_conversation_progress">Nieuw gesprek aanmaken&#8230;</string>
+    <string name="chat_new_conversation_error_title">Nieuw gesprek</string>
+    <string name="chat_new_conversation_error_message">Nieuw gesprek aanmaken is mislukt. Controleer je internetverbinding en probeer opnieuw.</string>
+    <string name="chat_action_add">Contacten toevoegen</string>
+    <string name="chat_action_leave">Gesprek verlaten</string>
+    <string name="chat_leave_progress">Gesprek verlaten&#8230;</string>
+    <string name="chat_leave_error_title">Fout</string>
+    <string name="chat_leave_error_message">Het gesprek verlaten is mislukt. Controleer je internetverbinding en probeer opnieuw.</string>
+    <string name="chat_add_progress">Contacten toevoegen&#8230;</string>
+    <string name="chat_add_error_title">Fout</string>
+    <string name="chat_add_error_message">Contacten toevoegen is mislukt. Controleer je internetverbinding en probeer opnieuw.</string>
+
+    <string name="medication_name">Geneesmiddel</string>
+    <string name="medication_dose">Dosis</string>
+    <string name="medication_time_1">Ontbijt</string>
+    <string name="medication_time_2">10 uur</string>
+    <string name="medication_time_3">Lunch</string>
+    <string name="medication_time_4">16 uur</string>
+    <string name="medication_time_5">Diner</string>
+    <string name="medication_time_6">20 uur</string>
+    <string name="medication_time_7">Slapen</string>
+
+    <string name="invoice_title">Factuur %1$s</string>
+    <string name="invoice_error_download">De factuur kon niet gedownload worden.</string>
+    <string name="invoice_error_load">De factuur kon niet geopend worden.</string>
+    
+    <string name="habitant_birthday">Geboortedatum:</string>
+    <string name="habitant_health_insurance">Ziekenfonds:</string>
+    <string name="habitant_insurance_number">Rijksregisternummer:</string>
+    <string name="habitant_civil_state">Burgerlijke staat:</string>
+    <string name="habitant_partner">Partner:</string>
+    <string name="habitant_phone">Telefoonnummer:</string>
+    <string name="habitant_email">E-mailadres:</string>
+    <string name="habitant_start">Start bewoning:</string>
+    <string name="habitant_stop">Einde bewoning:</string>
+    <string name="habitant_stop_reason">Reden stopzetting:</string>
+    <string name="habitant_stop_date">Datum stopzetting:</string>
+    <string name="habitant_mutuality">Mutualiteit:</string>
+    <string name="habitant_medical_title">Medische info</string>
+    <string name="habitant_length">Lengte:</string>
+    <string name="habitant_weight">Gewicht:</string>
+    <string name="habitant_katz">KATZ-schaal:</string>
+    <string name="habitant_bel">BEL score:</string>
+    <string name="habitant_blood_type">Bloedgroep:</string>
+    <string name="habitant_doctor">Huisarts:</string>
+    <string name="habitant_nurse">Verpleging:</string>
+    <string name="habitant_intolerances">Intoleranties:</string>
+    <string name="habitant_allergies">Allergieën:</string>
+    <string name="habitant_diseases">Aandoeningen:</string>
+    <string name="habitant_aids">Hulpmiddelen:</string>
+    <string name="habitant_remarks">Opmerkingen:</string>
+    <string name="habitant_empty_value">&#032;</string>
+    <string name="habitant_flat_number">Flat nummer:</string>
+
+    <string name="weather_temperature">%1$s°C</string>
+    <string name="weather_temperature_current">%1$s°</string>
+
+    <string name="resident_info">Bewonersfiche</string>
+    <string name="resident_news">Residentie info</string>
+    <string name="open_file">Open file</string>
+
+    <string name="nearby">In de buurt</string>
+    <string name="activities">Activiteiten</string>
+
+    <string name="activity_location">Waar:</string>
+    <string name="activity_empty_value">&#032;</string>
+    <string name="activity_start_date_time">Wanneer:</string>
+    <string name="activity_end_date">End Date:</string>
+    <string name="activity_start_time">Start Time:</string>
+    <string name="activity_end_time">End time:</string>
+    <string name="activity_description">Informatie:</string>
+    <string name="activity_invoice_price">Prijs:</string>
+    <string name="activity_invoice_date">Invoice Date:</string>
+    <string name="activity_invoice_description">Invoice Description:</string>
+
+</resources>

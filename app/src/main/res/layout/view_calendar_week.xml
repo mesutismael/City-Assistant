@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/fragment_padding_left_right"
+    android:paddingTop="@dimen/fragment_padding_top_bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/week_view_hours_width"
+        android:paddingRight="@dimen/fragment_padding_left_right"
+        android:paddingBottom="@dimen/fragment_padding_top_bottom">
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_monday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_tuesday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_wednesday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_thursday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_friday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_saturday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_sunday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/fragment_padding_top_bottom"
+        android:clipToPadding="false"
+        android:paddingRight="@dimen/fragment_padding_left_right"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_hours"
+                android:layout_width="@dimen/week_view_hours_width"
+                android:layout_height="@dimen/week_view_height"
+                android:paddingRight="@dimen/fragment_padding_left_right"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/week_view_height"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/layout_eventsBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/view_monday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:id="@+id/view_tuesday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:id="@+id/view_wednesday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:id="@+id/view_thursday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:id="@+id/view_friday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:id="@+id/view_saturday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:id="@+id/view_sunday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <smartassist.appreciate.be.smartassist.views.TextView
+        android:id="@+id/textView_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingLeft="@dimen/list_padding_horizontal_inner"
+        android:paddingRight="@dimen/list_padding_horizontal_inner"
+        android:paddingTop="@dimen/list_padding_vertical_inner"
+        android:paddingBottom="@dimen/list_padding_vertical_inner"/>
+
+    <smartassist.appreciate.be.smartassist.views.TextView
+        android:id="@+id/textView_dose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/list_padding_horizontal_inner"
+        android:paddingRight="@dimen/list_padding_horizontal_inner"
+        android:paddingTop="@dimen/list_padding_vertical_inner"
+        android:paddingBottom="@dimen/list_padding_vertical_inner"/>
+
+    <ImageView
+        android:id="@+id/imageView_time_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/list_padding_horizontal_inner"
+        android:paddingRight="@dimen/list_padding_horizontal_inner"
+        android:paddingTop="@dimen/list_padding_vertical_inner"
+        android:paddingBottom="@dimen/list_padding_vertical_inner"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/imageView_time_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/list_padding_horizontal_inner"
+        android:paddingRight="@dimen/list_padding_horizontal_inner"
+        android:paddingTop="@dimen/list_padding_vertical_inner"
+        android:paddingBottom="@dimen/list_padding_vertical_inner"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/imageView_time_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/list_padding_horizontal_inner"
+        android:paddingRight="@dimen/list_padding_horizontal_inner"
+        android:paddingTop="@dimen/list_padding_vertical_inner"
+        android:paddingBottom="@dimen/list_padding_vertical_inner"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/imageView_time_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/list_padding_horizontal_inner"
+        android:paddingRight="@dimen/list_padding_horizontal_inner"
+        android:paddingTop="@dimen/list_padding_vertical_inner"
+        android:paddingBottom="@dimen/list_padding_vertical_inner"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/imageView_time_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/list_padding_horizontal_inner"
+        android:paddingRight="@dimen/list_padding_horizontal_inner"
+        android:paddingTop="@dimen/list_padding_vertical_inner"
+        android:paddingBottom="@dimen/list_padding_vertical_inner"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/imageView_time_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/list_padding_horizontal_inner"
+        android:paddingRight="@dimen/list_padding_horizontal_inner"
+        android:paddingTop="@dimen/list_padding_vertical_inner"
+        android:paddingBottom="@dimen/list_padding_vertical_inner"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/imageView_time_7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/list_padding_horizontal_inner"
+        android:paddingRight="@dimen/list_padding_horizontal_inner"
+        android:paddingTop="@dimen/list_padding_vertical_inner"
+        android:paddingBottom="@dimen/list_padding_vertical_inner"
+        android:scaleType="centerInside"/>
+
+</LinearLayout>

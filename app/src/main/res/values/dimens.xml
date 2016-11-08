@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <dimen name="fragment_padding_top_bottom">20dp</dimen>
+    <dimen name="fragment_padding_left_right">28dp</dimen>
+    <dimen name="top_bar_height">64dp</dimen>
+    <dimen name="top_bar_text">16dp</dimen>
+    <dimen name="top_bar_title_text">18dp</dimen>
+    <dimen name="top_bar_back_image_width">80dp</dimen> <!-- top_bar_back_image_height + the extra padding left and right -->
+    <dimen name="top_bar_back_image_height">64dp</dimen> <!-- same as top_bar_height. Actual height will be top_bar_height - 2 * fragment_padding_top_bottom -->
+    <dimen name="top_bar_back_text_margin_left">20dp</dimen>
+    <dimen name="button_border_width">1dp</dimen>
+    <dimen name="button_corners">24dp</dimen>
+    <dimen name="button_padding_sides">24dp</dimen>
+    <dimen name="button_padding_vertical">10dp</dimen>
+    <dimen name="button_min_height">48dp</dimen>
+    <dimen name="button_min_width">120dp</dimen>
+    <dimen name="button_oval_min_size">48dp</dimen>
+    <dimen name="button_oval_padding">10dp</dimen>
+    <dimen name="crouton_width">280dp</dimen>
+    <dimen name="crouton_margin">12dp</dimen>
+    <dimen name="crouton_padding">16dp</dimen>
+    <dimen name="button_oval">72dp</dimen>
+    <dimen name="button_oval_colored_padding">16dp</dimen><!-- button_oval_colored_padding <= button_oval / sqrt(2)-->
+    <dimen name="button_oval_border_width">1dp</dimen>
+
+    <!-- Main -->
+    <dimen name="main_tile_margin">20dp</dimen>
+    <dimen name="main_tiles_extra_margin_left_right">8dp</dimen> <!-- fragment_padding_left_right - main_tile_margin -->
+    <dimen name="main_tile_circle">36dp</dimen> <!-- (main_tile_margin * 2) - 4 -->
+    <dimen name="main_tile_circle_text">15dp</dimen>
+    <dimen name="main_tile_corners">5dp</dimen>
+    <dimen name="main_tile_text">16sp</dimen>
+    <dimen name="main_tile_text_padding_top">12dp</dimen>
+    <dimen name="main_tile_text_padding_left_right">10dp</dimen>
+
+    <!-- POI -->
+    <dimen name="poi_item_padding">24dp</dimen>
+    <dimen name="poi_item_height">350dp</dimen>
+    <dimen name="poi_item_large_image_width">200dp</dimen>
+    <dimen name="poi_item_small_image_height">100dp</dimen>
+    <dimen name="poi_item_title_text">22sp</dimen>
+    <dimen name="poi_item_title_padding_bottom">14dp</dimen>
+    <dimen name="poi_item_address_line_spacing">4dp</dimen>
+    <dimen name="poi_item_line_spacing">6dp</dimen>
+    <dimen name="poi_detail_padding">24dp</dimen>
+    <dimen name="poi_detail_opening_times_item_padding">6dp</dimen>
+    <dimen name="poi_detail_subtitle_text">20sp</dimen>
+    <dimen name="poi_category_list_height">84dp</dimen><!-- Fixed height based on ToggleButton height, margins and padding for RecyclerView height fix -->
+    <dimen name="poi_toggle_button">25dp</dimen>
+    <!-- List -->
+    <dimen name="list_item_elevation">1dp</dimen>
+    <dimen name="list_padding_vertical_outer">2dp</dimen>
+    <dimen name="list_padding_vertical_inner">16dp</dimen>
+    <dimen name="list_padding_horizontal_outer">10dp</dimen>
+    <dimen name="list_padding_horizontal_inner">16dp</dimen>
+    <dimen name="list_divider_height">1dp</dimen>
+
+    <!-- Calendar -->
+    <dimen name="calendar_toggle_padding">4dp</dimen>
+    <dimen name="calendar_toggle_background_corners">28dp</dimen><!-- button_corners + calendar_toggle_padding -->
+    <dimen name="calendar_toggle_padding_sides">20dp</dimen>
+    <dimen name="calendar_toggle_padding_vertical">6dp</dimen>
+    <dimen name="calendar_toggle_min_height">32dp</dimen>
+    <dimen name="calendar_toggle_min_width">96dp</dimen>
+    <dimen name="calendar_layout_divider_height">1px</dimen>
+    <dimen name="calendar_habitant_circle">10dp</dimen>
+    <dimen name="calendar_habitant_layout">28dp</dimen><!-- 2 * calendar_habitant_circle + 4 * calendar_habitant_horizontal_padding_inner -->
+    <dimen name="calendar_habitant_padding_inner">4dp</dimen>
+    <dimen name="calendar_habitant_horizontal_padding_inner">2dp</dimen><!-- calendar_habitant_padding_inner / 2 -->
+    <dimen name="calendar_habitant_padding_outer">10dp</dimen>
+    <dimen name="calendar_time_min_width">90dp</dimen>
+    <dimen name="calendar_month_year_text">22sp</dimen>
+    <dimen name="calendar_month_year_padding">6dp</dimen>
+    <dimen name="calendar_month_month_min_width">180dp</dimen>
+    <dimen name="calendar_month_arrow">24dp</dimen>
+    <dimen name="calendar_month_day_text">20sp</dimen>
+    <dimen name="calendar_month_entry_min_height">48dp</dimen>
+    <dimen name="calendar_month_entry_max_height">80dp</dimen>
+    <dimen name="calendar_month_entry_selected_circle">32dp</dimen>
+    <dimen name="calendar_month_padding">32dp</dimen>
+    <dimen name="calendar_day_arrow">32dp</dimen>
+    <dimen name="calendar_day_day_text">80sp</dimen>
+    <dimen name="calendar_day_month_text">18sp</dimen>
+    <dimen name="calendar_day_time_line_width">2dp</dimen>
+    <dimen name="calendar_day_time_line_padding">24dp</dimen>
+    <dimen name="calendar_day_time_line_indicator">20dp</dimen>
+    <dimen name="calendar_day_birthday_padding_right">44dp</dimen>
+    <dimen name="calendar_day_birthday_icon">18dp</dimen>
+    <dimen name="calendar_day_birthday_icon_margin_bottom">2dp</dimen>
+    <dimen name="calendar_day_birthday_icon_margin_right">20dp</dimen>
+    <dimen name="calendar_day_item_padding">20dp</dimen>
+    <dimen name="calendar_day_padding_horizontal">64dp</dimen>
+    <dimen name="calendar_day_padding_vertical">48dp</dimen>
+    <dimen name="calendar_day_of_week_padding_left">44dp</dimen>
+    <dimen name="calendar_day_of_week_padding_bottom">12dp</dimen>
+    <dimen name="calendar_day_of_week_text">20sp</dimen>
+
+    <dimen name="week_view_hours_width">80dp</dimen>
+    <dimen name="week_view_height">1800dp</dimen>
+    <dimen name="week_view_event_margin_horizontal">4dp</dimen>
+    <dimen name="week_view_event_padding">8dp</dimen>
+    <dimen name="week_view_event_lines_padding">8dp</dimen>
+    <dimen name="week_view_event_hour_text">16sp</dimen>
+    <dimen name="week_view_current_time_height">2dp</dimen>
+
+    <!-- News -->
+    <dimen name="news_item_padding">24dp</dimen>
+    <dimen name="news_item_height">350dp</dimen>
+    <dimen name="news_item_large_image_width">200dp</dimen>
+    <dimen name="news_item_small_image_height">100dp</dimen>
+    <dimen name="news_item_title_text">22sp</dimen>
+    <dimen name="news_item_title_padding_bottom">14dp</dimen>
+    <dimen name="news_item_icon">32dp</dimen>
+    <dimen name="news_calendar_entry_padding">12dp</dimen>
+    <dimen name="news_calendar_icon">40dp</dimen>
+    <dimen name="news_calendar_time_width">40dp</dimen>
+    <dimen name="news_weather_image_height">180dp</dimen>
+    <dimen name="news_weather_current_text">96dp</dimen>
+    <dimen name="news_weather_icon">40dp</dimen>
+    <dimen name="news_line_spacing">4dp</dimen>
+
+    <!-- RSS -->
+    <dimen name="rss_intro_padding_bottom">16dp</dimen>
+
+    <!-- Photos -->
+    <dimen name="photos_item">150dp</dimen>
+    <dimen name="photos_detail_arrow">80dp</dimen><!-- calendar_day_arrow + 2 * photos_detail_padding -->
+    <dimen name="photos_detail_padding">24dp</dimen>
+
+    <!-- Screen saver -->
+    <dimen name="screen_saver_buttons_bar_width">140dp</dimen>
+    <dimen name="screen_saver_buttons_bar_padding">20dp</dimen>
+    <dimen name="screen_saver_button_height">120dp</dimen>
+    <dimen name="screen_saver_button_padding_horizontal">30dp</dimen>
+    <dimen name="screen_saver_button_padding_vertical">40dp</dimen>
+    <dimen name="screen_saver_time_default_text">60sp</dimen>
+    <dimen name="screen_saver_time_large_text">160dp</dimen>
+    <dimen name="screen_saver_time_padding">60dp</dimen>
+    <dimen name="screen_saver_time_padding_bottom">28dp</dimen>
+    <dimen name="screen_saver_date_text">40sp</dimen>
+    <dimen name="screen_saver_clock_padding_left">95dp</dimen><!-- screen_saver_buttons_bar_width - screen_saver_buttons_bar_padding - screen_saver_button_padding_horizontal -->
+    <dimen name="screen_saver_temp_current_text">132dp</dimen>
+    <dimen name="screen_saver_temp_text">20sp</dimen>
+    <dimen name="screen_saver_temp_icon">40dp</dimen>
+    <dimen name="screen_saver_temp_icon_margin_vertical">16dp</dimen>
+    <dimen name="screen_saver_temp_day_width">80dp</dimen>
+
+    <!-- Pin -->
+    <dimen name="pin_button_max_size">80dp</dimen>
+    <dimen name="pin_button_padding_horizontal">24dp</dimen>
+    <dimen name="pin_button_padding_vertical">20dp</dimen>
+    <dimen name="pin_title_text">32sp</dimen>
+    <dimen name="pin_number_text">32sp</dimen>
+    <dimen name="pin_padding_inner">24dp</dimen>
+    <dimen name="pin_circle">12dp</dimen>
+    <dimen name="pin_incorrect_animation_translate">28dp</dimen>
+
+    <!-- Weather -->
+    <dimen name="weather_text">20sp</dimen>
+    <dimen name="weather_current_text">132dp</dimen>
+    <dimen name="weather_current_padding_bottom">28dp</dimen>
+    <dimen name="weather_icon">40dp</dimen>
+    <dimen name="weather_icon_margin_vertical">16dp</dimen>
+    <dimen name="weather_day_width">80dp</dimen>
+
+    <!-- Calling -->
+    <dimen name="calling_preview">72dp</dimen>
+    <dimen name="calling_preview_width">120dp</dimen>
+    <dimen name="calling_preview_height">160dp</dimen>
+    <dimen name="calling_preview_margin">20dp</dimen>
+    <dimen name="calling_view_spacing">12dp</dimen>
+    <dimen name="calling_image">200dp</dimen>
+    <dimen name="calling_name_text">22sp</dimen>
+
+    <!-- Contacts -->
+    <dimen name="contacts_button_spacing">12dp</dimen>
+    <dimen name="contacts_qr">180dp</dimen>
+
+    <!-- Carebook -->
+    <dimen name="care_book_max_width">600dp</dimen>
+    <dimen name="care_book_list_padding_vertical">10dp</dimen> <!-- list_padding_vertical_inner / 2 + list_padding_vertical_outer -->
+    <dimen name="care_book_list_padding_horizontal">26dp</dimen> <!-- list_padding_horizontal_outer + list_padding_horizontal_inner -->
+    <dimen name="care_book_item_box_margin_vertical">8dp</dimen> <!-- list_padding_vertical_inner / 2 -->
+    <dimen name="care_book_item_box_margin_left">12dp</dimen>
+    <dimen name="care_book_item_box_padding">24dp</dimen> <!-- news_item_padding -->
+    <dimen name="care_book_item_box_padding_left">34dp</dimen> <!-- care_book_item_box_padding + the size of the background arrow -->
+    <dimen name="care_book_item_view_spacing">12dp</dimen>
+    <dimen name="care_book_item_smiley">36dp</dimen>
+    <dimen name="care_book_item_line_top_height">20dp</dimen> <!-- (the size of the background arrow / 2) + care_book_item_box_padding + care_book_item_box_margin_vertical - (care_book_item_smiley / 2) -->
+    <dimen name="care_book_item_line_width">1dp</dimen>
+    <dimen name="care_book_text_small">12sp</dimen>
+
+    <!-- Chat -->
+    <dimen name="chat_send">48dp</dimen>
+    <dimen name="chat_send_padding">6dp</dimen>
+    <dimen name="chat_send_margin_vertical">14dp</dimen><!-- fragment_padding_top_bottom - chat_send_padding -->
+    <dimen name="chat_send_margin_horizontal">22dp</dimen><!-- fragment_padding_left_right - chat_send_padding -->
+    <dimen name="chat_message_max_height">120dp</dimen>
+    <dimen name="chat_image">48dp</dimen>
+    <dimen name="chat_max_width">540dp</dimen>
+    <dimen name="chat_date_text">12sp</dimen>
+    <dimen name="chat_date_margin_top">10dp</dimen>
+    <dimen name="chat_box_padding">24dp</dimen> <!-- news_item_padding -->
+    <dimen name="chat_other_name_margin_bottom">12dp</dimen>
+    <dimen name="chat_other_name_text">12sp</dimen>
+    <dimen name="chat_other_box_padding_left">34dp</dimen> <!-- care_book_item_box_padding_left -->
+    <dimen name="chat_self_box_padding_right">34dp</dimen> <!-- care_book_item_box_padding_left -->
+    <dimen name="chat_contact_message_margin_bottom">10dp</dimen>
+    <dimen name="chat_contact_add_margin">28dp</dimen>
+    <dimen name="chat_contacts_padding_bottom">86dp</dimen> <!-- 56dp + chat_contact_add_margin + list_padding_vertical_outer -->
+
+    <!-- Invoice -->
+    <dimen name="invoice_icon_width">60dp</dimen>
+    <dimen name="invoice_icon_height">60dp</dimen>
+    <dimen name="invoice_progress_width">200dp</dimen>
+
+    <!-- Habitants -->
+    <dimen name="habitant_image_width">200dp</dimen>
+    <dimen name="habitant_view_spacing">12dp</dimen>
+
+    <!-- User select  -->
+    <dimen name="selection_card_text">22sp</dimen>
+    <dimen name="selection_card_padding">24dp</dimen>
+    <dimen name="selection_card_margin_left">20dp</dimen>
+    <dimen name="selection_card_image_height">350dp</dimen>
+    <dimen name="selection_card_image_width">250dp</dimen>
+    <dimen name="select_button_elevation">1dp</dimen>
+    <dimen name="select_button_corners">5dp</dimen>
+
+    <!-- Activities -->
+    <dimen name="activity_image_width">200dp</dimen>
+    <dimen name="activity_view_spacing">12dp</dimen>
+
+
+</resources>

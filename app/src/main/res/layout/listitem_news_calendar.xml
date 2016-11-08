@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/news_item_height"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/main_tile_corners"
+    app:cardElevation="@dimen/list_item_elevation"
+    app:cardPreventCornerOverlap="false"
+    app:cardBackgroundColor="@color/general_theme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/news_item_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/news_item_title_padding_bottom">
+
+            <ImageView
+                android:layout_width="@dimen/news_calendar_icon"
+                android:layout_height="@dimen/news_calendar_icon"
+                android:src="@drawable/module_calendar"
+                android:layout_marginRight="@dimen/news_item_padding"/>
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/general_text_white"
+                android:text="@string/news_calendar_title"
+                android:textSize="@dimen/news_item_title_text"
+                app:typeface="montserrat_light"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/news_calendar_entry_padding"
+            android:paddingBottom="@dimen/news_calendar_entry_padding">
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_calendarTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/news_calendar_time_width"
+                android:textColor="@color/general_text_white"
+                app:typeface="montserrat_light"/>
+
+            <View
+                android:id="@+id/view_habitant1"
+                android:layout_width="@dimen/calendar_habitant_circle"
+                android:layout_height="@dimen/calendar_habitant_circle"
+                android:layout_marginLeft="@dimen/calendar_habitant_padding_outer"
+                android:layout_marginRight="@dimen/calendar_habitant_padding_outer"/>
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_calendarDescription1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/general_text_white"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:typeface="montserrat_light"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_divider1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_divider_height"
+            android:background="@color/news_calendar_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/news_calendar_entry_padding"
+            android:paddingBottom="@dimen/news_calendar_entry_padding">
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_calendarTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/news_calendar_time_width"
+                android:textColor="@color/general_text_white"
+                app:typeface="montserrat_light"/>
+
+            <View
+                android:id="@+id/view_habitant2"
+                android:layout_width="@dimen/calendar_habitant_circle"
+                android:layout_height="@dimen/calendar_habitant_circle"
+                android:layout_marginLeft="@dimen/calendar_habitant_padding_outer"
+                android:layout_marginRight="@dimen/calendar_habitant_padding_outer"/>
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_calendarDescription2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/general_text_white"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:typeface="montserrat_light"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_divider2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_divider_height"
+            android:background="@color/news_calendar_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/news_calendar_entry_padding"
+            android:paddingBottom="@dimen/news_calendar_entry_padding">
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_calendarTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/news_calendar_time_width"
+                android:textColor="@color/general_text_white"
+                app:typeface="montserrat_light"/>
+
+            <View
+                android:id="@+id/view_habitant3"
+                android:layout_width="@dimen/calendar_habitant_circle"
+                android:layout_height="@dimen/calendar_habitant_circle"
+                android:layout_marginLeft="@dimen/calendar_habitant_padding_outer"
+                android:layout_marginRight="@dimen/calendar_habitant_padding_outer"/>
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_calendarDescription3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/general_text_white"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:typeface="montserrat_light"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

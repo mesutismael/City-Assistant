@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_categories"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/poi_category_list_height"
+        android:paddingTop="@dimen/list_padding_vertical_outer"
+        android:paddingBottom="@dimen/list_padding_vertical_outer"
+        android:paddingLeft="@dimen/list_padding_horizontal_outer"
+        android:paddingRight="@dimen/list_padding_horizontal_outer"
+        android:clipToPadding="false"
+        android:scrollbars="none"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/list_padding_vertical_outer"
+        android:paddingLeft="@dimen/list_padding_horizontal_outer"
+        android:paddingRight="@dimen/list_padding_horizontal_outer"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

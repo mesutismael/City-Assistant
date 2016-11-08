@@ -1,0 +1,371 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="smartassist.appreciate.be.smartassist">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="smartassist.appreciate.be.smartassist.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="smartassist.appreciate.be.smartassist.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+
+    <application
+        android:name=".application.SmartAssistApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.ScanActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name=".activities.PoiActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.PoiSelectionActivity"/>
+
+        <activity
+            android:name=".activities.NewsActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.WeatherActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.CalendarActivity"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.EmergencyActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.PhotosActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.RssActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.MedicationActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.VitalsActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.CarebookActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.ChatContactsActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.PoiDetailActivity"
+            android:parentActivityName=".activities.PoiActivity"/>
+
+        <activity
+            android:name=".activities.NewsDetailActivity"
+            android:parentActivityName=".activities.NewsActivity"/>
+
+        <activity
+            android:name=".activities.RssDetailActivity"
+            android:parentActivityName=".activities.RssActivity"/>
+
+        <activity
+            android:name=".activities.PhotoDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".activities.PhotosActivity"/>
+
+        <activity
+            android:name=".activities.ScreenSaverActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name=".activities.PinUnlockActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".activities.ScreenSaverActivity"/>
+
+        <activity
+            android:name=".activities.IncomingCallActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.CallActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.ChatActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".activities.ChatContactsActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity
+            android:name=".activities.InvoicesActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.InvoiceDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".activities.InvoicesActivity"/>
+
+        <activity
+            android:name=".activities.HabitantsActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.ResidenceInfoSelectionActivity"/>
+
+        <activity
+            android:name=".activities.ResidenceInfoSelectionActivity"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.ResidentNewsActivity"
+            android:parentActivityName=".activities.ResidenceInfoSelectionActivity"/>
+
+        <activity
+            android:name=".activities.ResidenceNewsDetailsActivity"
+            android:parentActivityName=".activities.ResidentNewsActivity"/>
+        <activity
+            android:name=".activities.OpenFileActivity"
+            android:parentActivityName=".activities.ResidentNewsActivity"/>
+
+        <activity
+            android:name=".activities.PoiSelectionActivity"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.NearByActivitiesActivity"
+            android:parentActivityName=".activities.PoiSelectionActivity"/>
+
+        <activity
+            android:name=".activities.NearByActivitiesDetailsActivity"
+            android:parentActivityName=".activities.NearByActivitiesActivity"/>
+
+        <receiver
+            android:name=".receivers.DeviceAdminRcvr"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.app.action.ACTION_PASSWORD_FAILED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.app.action.LOCK_TASK_ENTERING" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.app.action.LOCK_TASK_EXITING" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receivers.AlarmReceiver"/>
+
+        <receiver
+            android:name=".receivers.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="smartassist.appreciate.be.smartassist"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.DataService"
+            android:exported="false"/>
+
+        <service
+            android:name=".services.SinchService"
+            android:exported="false"/>
+
+        <service
+            android:name=".services.GcmIntentService"
+            android:exported="false"/>
+
+        <service
+            android:name=".services.ChatService"
+            android:exported="false"/>
+
+        <service
+            android:name="com.mapbox.mapboxsdk.telemetry.TelemetryService" />
+
+        <provider
+            android:name=".contentproviders.ModuleContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.ModuleContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.PoiCategoryContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.PoiCategoryContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.PoiContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.PoiContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.OpeningTimesContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.OpeningTimesContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.CalendarEventContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.CalendarEventContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.CalendarBirthdayContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.CalendarBirthdayContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.NewsCategoryContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.NewsCategoryContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.NewsContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.NewsContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.WeatherContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.WeatherContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.RssContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.RssContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.EmergencyContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.EmergencyContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.EmergencyCategoryContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.EmergencyCategoryContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.PhotoContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.PhotoContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.NotificationContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.NotificationContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.CareBookContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.CareBookContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.MedicationContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.MedicationContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.InvoiceContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.InvoiceContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.HabitantContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.HabitantContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.ChatMessageContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.ChatMessageContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.ChatConversationContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.ChatConversationContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.ChatSenderContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.ChatSenderContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.ResidentNewsContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.ResidentNewsContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.ActivitiesContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.ActivitiesContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.ActivityTypesContentProvider"
+            android:authorities="smartassist.appreciate.be.smartassist.contentproviders.ActivityTypesContentProvider"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

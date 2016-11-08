@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bar_height"
+    android:orientation="horizontal"
+    android:background="@color/top_bar">
+
+    <LinearLayout
+        android:id="@+id/layout_back"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|start">
+
+        <ImageView
+            android:layout_width="@dimen/top_bar_back_image_width"
+            android:layout_height="@dimen/top_bar_back_image_height"
+            android:paddingLeft="@dimen/fragment_padding_left_right"
+            android:paddingRight="@dimen/fragment_padding_left_right"
+            android:paddingTop="@dimen/fragment_padding_top_bottom"
+            android:paddingBottom="@dimen/fragment_padding_top_bottom"
+            android:src="@drawable/ic_back"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/top_bar_text"
+            android:textSize="@dimen/top_bar_text"
+            android:text="@string/top_bar_back"
+            app:typeface="montserrat_light"/>
+
+    </LinearLayout>
+
+    <smartassist.appreciate.be.smartassist.views.TextView
+        android:id="@+id/textView_topBarTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:textColor="@color/top_bar_text"
+        android:textSize="@dimen/top_bar_title_text"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:typeface="montserrat_regular"/>
+
+    <smartassist.appreciate.be.smartassist.views.TextClock
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|end"
+        android:textSize="@dimen/top_bar_text"
+        android:textColor="@color/top_bar_text"
+        app:typeface="montserrat_light"
+        android:paddingRight="@dimen/fragment_padding_left_right"
+        android:paddingTop="@dimen/fragment_padding_top_bottom"
+        android:paddingBottom="@dimen/fragment_padding_top_bottom"/>
+
+</LinearLayout>

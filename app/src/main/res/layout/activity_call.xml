@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_bar"
+             android:id="@+id/layout_topBar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/fragment_padding_top_bottom"
+        android:paddingLeft="@dimen/fragment_padding_left_right"
+        android:paddingRight="@dimen/fragment_padding_left_right">
+
+        <LinearLayout
+            android:id="@+id/layout_remoteVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/layout_noVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageView_caller"
+                android:layout_width="@dimen/calling_image"
+                android:layout_height="@dimen/calling_image"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="@dimen/calling_view_spacing"
+                app:riv_corner_radius="@dimen/main_tile_corners"/>
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_caller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fragment_padding_top_bottom"
+                android:textSize="@dimen/calling_name_text"/>
+
+            <smartassist.appreciate.be.smartassist.views.TextView
+                android:id="@+id/textView_timerNoVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/fragment_padding_top_bottom"
+        android:paddingLeft="@dimen/fragment_padding_left_right"
+        android:paddingRight="@dimen/fragment_padding_left_right"
+        android:layout_marginTop="@dimen/calling_view_spacing">
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_timer"
+            android:layout_width="@dimen/calling_preview"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView_toggleInput"
+                android:layout_width="@dimen/button_oval"
+                android:layout_height="@dimen/button_oval"
+                android:layout_marginRight="@dimen/calling_view_spacing"
+                android:src="@drawable/call_input_front"
+                style="@style/SmartAssist.Oval.Empty"/>
+
+            <ImageView
+                android:id="@+id/imageView_toggleCamera"
+                android:layout_width="@dimen/button_oval"
+                android:layout_height="@dimen/button_oval"
+                android:layout_marginRight="@dimen/calling_view_spacing"
+                android:src="@drawable/call_camera_enabled"
+                style="@style/SmartAssist.Oval.Empty"/>
+
+            <ImageView
+                android:id="@+id/imageView_hangUp"
+                android:layout_width="@dimen/button_oval"
+                android:layout_height="@dimen/button_oval"
+                android:src="@drawable/call_decline"
+                style="@style/SmartAssist.Oval.Red"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_localVideo"
+            android:layout_width="@dimen/calling_preview"
+            android:layout_height="@dimen/calling_preview"/>
+
+    </LinearLayout>
+
+</LinearLayout>

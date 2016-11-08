@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView_weather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/general_theme"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_currentTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/weather_current_padding_bottom"
+            android:textSize="@dimen/weather_current_text"
+            android:textColor="@color/general_text_white"
+            app:typeface="montserrat_hairline"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/weather_day_width"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_day1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/weather_text"
+                    android:textColor="@color/general_text_white"
+                    app:typeface="montserrat_regular"/>
+
+                <ImageView
+                    android:id="@+id/imageView_icon1"
+                    android:layout_width="@dimen/weather_icon"
+                    android:layout_height="@dimen/weather_icon"
+                    android:layout_marginTop="@dimen/weather_icon_margin_vertical"
+                    android:layout_marginBottom="@dimen/weather_icon_margin_vertical"
+                    android:scaleType="centerInside"/>
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_temp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/weather_text"
+                    android:textColor="@color/general_text_white"
+                    app:typeface="montserrat_regular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/weather_day_width"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_day2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/news_weather_different_day"
+                    android:textSize="@dimen/weather_text"
+                    app:typeface="montserrat_regular"/>
+
+                <ImageView
+                    android:id="@+id/imageView_icon2"
+                    android:layout_width="@dimen/weather_icon"
+                    android:layout_height="@dimen/weather_icon"
+                    android:layout_marginTop="@dimen/weather_icon_margin_vertical"
+                    android:layout_marginBottom="@dimen/weather_icon_margin_vertical"
+                    android:scaleType="centerInside"/>
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_temp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/news_weather_different_day"
+                    android:textSize="@dimen/weather_text"
+                    app:typeface="montserrat_regular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/weather_day_width"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_day3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/news_weather_different_day"
+                    android:textSize="@dimen/weather_text"
+                    app:typeface="montserrat_regular"/>
+
+                <ImageView
+                    android:id="@+id/imageView_icon3"
+                    android:layout_width="@dimen/weather_icon"
+                    android:layout_height="@dimen/weather_icon"
+                    android:layout_marginTop="@dimen/weather_icon_margin_vertical"
+                    android:layout_marginBottom="@dimen/weather_icon_margin_vertical"
+                    android:scaleType="centerInside"/>
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_temp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/news_weather_different_day"
+                    android:textSize="@dimen/weather_text"
+                    app:typeface="montserrat_regular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/weather_day_width"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_day4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/news_weather_different_day"
+                    android:textSize="@dimen/weather_text"
+                    app:typeface="montserrat_regular"/>
+
+                <ImageView
+                    android:id="@+id/imageView_icon4"
+                    android:layout_width="@dimen/weather_icon"
+                    android:layout_height="@dimen/weather_icon"
+                    android:layout_marginTop="@dimen/weather_icon_margin_vertical"
+                    android:layout_marginBottom="@dimen/weather_icon_margin_vertical"
+                    android:scaleType="centerInside"/>
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_temp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/news_weather_different_day"
+                    android:textSize="@dimen/weather_text"
+                    app:typeface="montserrat_regular"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

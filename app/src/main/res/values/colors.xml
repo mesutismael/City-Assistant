@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="general_background">#f0f0f0</color>
+    <color name="general_background_white">#FFFFFF</color>
+    <color name="general_text">#3E4852</color>
+    <color name="general_text_white">#FFFFFF</color>
+    <color name="general_text_theme">#5ac2e6</color>
+    <color name="general_text_gray">#d4d4d4</color>
+    <color name="general_theme">#5ac2e6</color>
+    <color name="general_notification">#5ac2e6</color>
+
+    <!-- Buttons -->
+    <color name="button_border">#d4d4d4</color>
+    <color name="button_solid">#0000</color>
+    <color name="button_text">#3E4852</color>
+    <color name="button_pressed_border">#5ac2e6</color>
+    <color name="button_pressed_solid">#5ac2e6</color>
+    <color name="button_pressed_text">#FFFFFF</color>
+    <color name="button_dialog_border">#FFFFFF</color>
+    <color name="button_dialog_solid">#5ac2e6</color>
+    <color name="button_dialog_text">#FFFFFF</color>
+    <color name="button_dialog_pressed_border">#d4d4d4</color>
+    <color name="button_dialog_pressed_solid">#46a7c8</color>
+    <color name="button_dialog_pressed_text">#d4d4d4</color>
+    <color name="toggle_off_border">#d4d4d4</color>
+    <color name="toggle_off_solid">#0000</color>
+    <color name="toggle_off_text">#3E4852</color>
+    <color name="toggle_on_border">#5ac2e6</color>
+    <color name="toggle_on_solid">#5ac2e6</color>
+    <color name="toggle_on_text">#FFFFFF</color>
+    <color name="toggle_fav">#FFD700</color>
+    <color name="toggle_calendar_off_solid">#0000</color>
+    <color name="toggle_calendar_off_text">#FFFFFF</color>
+    <color name="toggle_calendar_on_solid">#FFFFFF</color>
+    <color name="toggle_calendar_on_text">#3E4852</color>
+    <color name="button_oval_blue_solid">#5ac2e6</color>
+    <color name="button_oval_blue_solid_pressed">#46a7c8</color>
+    <color name="button_oval_red_solid">#e68b73</color>
+    <color name="button_oval_red_solid_pressed">#e86f50</color>
+    <color name="Gold">#FFD700</color>
+
+    <color name="dialog_background">#5ac2e6</color>
+    <color name="dialog_text">#FFFFFF</color>
+
+    <color name="top_bar">#3E4852</color>
+    <color name="top_bar_transparent">#A33E4852</color>
+    <color name="top_bar_text">#FFFFFF</color>
+
+    <!-- Modules -->
+    <color name="module_text">#FFFFFF</color>
+    <color name="module_poi_start">#2fe6dd</color>
+    <color name="module_poi_end">#23beb6</color>
+    <color name="module_news_start">#59c2e6</color>
+    <color name="module_news_end">#36a7ce</color>
+    <color name="module_weather_start">#e68b73</color>
+    <color name="module_weather_end">#e86f50</color>
+    <color name="module_calendar_start">#46505a</color>
+    <color name="module_calendar_end">#323b44</color>
+    <color name="module_emergency_start">#856ca0</color>
+    <color name="module_emergency_end">#775899</color>
+    <color name="module_photos_start">#f0d67d</color>
+    <color name="module_photos_end">#e8c650</color>
+    <color name="module_rss_start">#91969c</color>
+    <color name="module_rss_end">#878d93</color>
+    <color name="module_medication_start">#EF79A5</color>
+    <color name="module_medication_end">#EA5C91</color>
+    <color name="module_vitals_start">#EB6868</color>
+    <color name="module_vitals_end">#E65353</color>
+    <color name="module_carebook_start">#D0E187</color>
+    <color name="module_carebook_end">#C1D764</color>
+    <color name="module_chat_start">#6F91BC</color>
+    <color name="module_chat_end">#6484AB</color>
+    <color name="module_invoices_start">#bb59cd</color>
+    <color name="module_invoices_end">#a246b3</color>
+    <color name="module_habitants_start">#37d683</color>
+    <color name="module_habitants_end">#299d60</color>
+
+    <color name="main_tile_circle">#e85070</color>
+
+    <color name="scan_background">#000000</color>
+
+    <color name="calendar_toggle_background">#55aac7</color>
+    <color name="calendar_divider">#FFFFFF</color>
+    <color name="calendar_month_day_list_divider">#FFFFFF</color>
+    <color name="calendar_day_list_divider">#e2e3e5</color>
+    <color name="calendar_time_line">#dedede</color>
+    <color name="calendar_habitant_1">#36a7ce</color>
+    <color name="calendar_habitant_2">#e86f50</color>
+    <color name="calendar_habitant_flat">#e8c650</color>
+    <color name="calendar_day_different_month">#bbbbbd</color>
+    <color name="calendar_week_event">#5ac2e6</color>
+    <color name="calendar_week_event_passed">#A43E4852</color>
+    <color name="calendar_week_current_time">#e85070</color>
+
+    <color name="news_calendar_divider">#FFFFFF</color>
+    <color name="news_weather_different_day">#bbbbbd</color>
+
+    <color name="photo_detail_top_bar">#4f5f6f</color>
+    <color name="photo_detail_background">#dedede</color>
+
+    <color name="screen_saver_buttons_background">#A33E4852</color>
+    <color name="screen_saver_dialog_background">#4b5e73</color>
+    <color name="screen_saver_dialog_button_border">#FFFFFF</color>
+    <color name="screen_saver_dialog_button_solid">#4b5e73</color>
+    <color name="screen_saver_dialog_button_text">#FFFFFF</color>
+    <color name="screen_saver_dialog_button_pressed_border">#d4d4d4</color>
+    <color name="screen_saver_dialog_button_pressed_solid">#3E4852</color>
+    <color name="screen_saver_dialog_button_pressed_text">#d4d4d4</color>
+
+    <color name="pin_button_border">#5ac2e6</color>
+    <color name="pin_button_solid">#0000</color>
+    <color name="pin_button_text">#FFFFFF</color>
+    <color name="pin_button_solid_pressed">#5ac2e6</color>
+
+    <color name="chat_message_background">#FFFFFF</color>
+    <color name="chat_date_text">#afafaf</color>
+    <color name="chat_other_name_text">#5ac2e6</color>
+
+    <color name="medication_divider">#e2e3e5</color>
+    <color name="medication_divider_dark">#3E4852</color>
+
+</resources>

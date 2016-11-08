@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_categories"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/poi_category_list_height"
+        android:paddingTop="@dimen/list_padding_vertical_outer"
+        android:paddingBottom="@dimen/list_padding_vertical_outer"
+        android:paddingLeft="@dimen/list_padding_horizontal_outer"
+        android:paddingRight="@dimen/list_padding_horizontal_outer"
+        android:clipToPadding="false"
+        android:scrollbars="none"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/fragment_padding_left_right"
+        android:paddingRight="@dimen/fragment_padding_left_right"
+        android:paddingBottom="@dimen/fragment_padding_top_bottom"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_habitant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/main_tile_corners"
+                app:cardElevation="@dimen/list_item_elevation"
+                app:cardPreventCornerOverlap="false"
+                android:layout_marginBottom="@dimen/list_padding_vertical_inner">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imageView_habitant"
+                        android:layout_width="@dimen/habitant_image_width"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:riv_corner_radius_top_left="@dimen/main_tile_corners"
+                        app:riv_corner_radius_bottom_left="@dimen/main_tile_corners"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/news_item_padding">
+
+                        <smartassist.appreciate.be.smartassist.views.TextView
+                            android:id="@+id/textView_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/news_item_title_text"
+                            android:paddingBottom="@dimen/news_item_title_padding_bottom"
+                            app:typeface="montserrat_light"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_marginRight="@dimen/habitant_view_spacing">
+
+
+                                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                    android:id="@+id/keyValueView_flat_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                    app:key="@string/habitant_flat_number"
+                                    app:emptyValue="@string/habitant_empty_value"/>
+
+                                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                    android:id="@+id/keyValueView_birth_day"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                    app:key="@string/habitant_birthday"
+                                    app:emptyValue="@string/habitant_empty_value"/>
+
+                                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                    android:id="@+id/keyValueView_insuranceNumber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                    app:key="@string/habitant_insurance_number"
+                                    app:emptyValue="@string/habitant_empty_value"/>
+
+                                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                    android:id="@+id/keyValueView_civilState"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                    app:key="@string/habitant_civil_state"
+                                    app:emptyValue="@string/habitant_empty_value"/>
+
+                                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                    android:id="@+id/keyValueView_partner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                    app:key="@string/habitant_partner"
+                                    app:emptyValue="@string/habitant_empty_value"/>
+
+                                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                    android:id="@+id/keyValueView_phone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                    app:key="@string/habitant_phone"
+                                    app:emptyValue="@string/habitant_empty_value"/>
+
+                                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                    android:id="@+id/keyValueView_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:key="@string/habitant_email"
+                                    app:emptyValue="@string/habitant_empty_value"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                    android:id="@+id/keyValueView_start"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                    app:key="@string/habitant_start"
+                                    app:emptyValue="@string/habitant_empty_value"/>
+
+
+                                <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                    android:id="@+id/keyValueView_mutuality"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:key="@string/habitant_health_insurance"
+                                    app:emptyValue="@string/habitant_empty_value"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_medicalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="@dimen/main_tile_corners"
+                app:cardElevation="@dimen/list_item_elevation"
+                app:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/news_item_padding">
+
+                    <smartassist.appreciate.be.smartassist.views.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/news_item_title_text"
+                        android:paddingBottom="@dimen/news_item_title_padding_bottom"
+                        android:text="@string/habitant_medical_title"
+                        app:typeface="montserrat_light"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginRight="@dimen/habitant_view_spacing">
+
+                            <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                android:id="@+id/keyValueView_length"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                app:key="@string/habitant_length"
+                                app:emptyValue="@string/habitant_empty_value"/>
+
+                            <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                android:id="@+id/keyValueView_weight"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                app:key="@string/habitant_weight"
+                                app:emptyValue="@string/habitant_empty_value"/>
+
+                            <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                android:id="@+id/keyValueView_katz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                app:key="@string/habitant_katz"
+                                app:emptyValue="@string/habitant_empty_value"/>
+
+                            <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                android:id="@+id/keyValueView_bel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                app:key="@string/habitant_bel"
+                                app:emptyValue="@string/habitant_empty_value"/>
+
+                            <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                android:id="@+id/keyValueView_doctor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                app:key="@string/habitant_doctor"
+                                app:emptyValue="@string/habitant_empty_value"/>
+
+                            <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                android:id="@+id/keyValueView_nurse"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:key="@string/habitant_nurse"
+                                app:emptyValue="@string/habitant_empty_value"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                android:id="@+id/keyValueView_bloodType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                app:key="@string/habitant_blood_type"
+                                app:emptyValue="@string/habitant_empty_value"/>
+
+                            <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                android:id="@+id/keyValueView_intolerances"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                app:key="@string/habitant_intolerances"
+                                app:emptyValue="@string/habitant_empty_value"/>
+
+                            <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                android:id="@+id/keyValueView_allergies"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                app:key="@string/habitant_allergies"
+                                app:emptyValue="@string/habitant_empty_value"/>
+
+                            <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                android:id="@+id/keyValueView_diseases"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                app:key="@string/habitant_diseases"
+                                app:emptyValue="@string/habitant_empty_value"/>
+
+                            <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                android:id="@+id/keyValueView_aids"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/habitant_view_spacing"
+                                app:key="@string/habitant_aids"
+                                app:emptyValue="@string/habitant_empty_value"/>
+
+                            <smartassist.appreciate.be.smartassist.views.KeyValueView
+                                android:id="@+id/keyValueView_remarks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:key="@string/habitant_remarks"
+                                app:emptyValue="@string/habitant_empty_value"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

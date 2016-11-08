@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView_news"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/news_item_height"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/main_tile_corners"
+    app:cardElevation="@dimen/list_item_elevation"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageView_large"
+            android:layout_width="@dimen/news_item_large_image_width"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius_top_left="@dimen/main_tile_corners"
+            app:riv_corner_radius_bottom_left="@dimen/main_tile_corners"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageView_small"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/news_item_small_image_height"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius_top_left="@dimen/main_tile_corners"
+                app:riv_corner_radius_top_right="@dimen/main_tile_corners"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/news_item_padding">
+
+                <LinearLayout
+                    android:id="@+id/layout_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <smartassist.appreciate.be.smartassist.views.TextView
+                        android:id="@+id/textView_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:typeface="montserrat_light"/>
+
+                    <ImageView
+                        android:id="@+id/imageView_icon"
+                        android:layout_width="@dimen/news_item_icon"
+                        android:layout_height="@dimen/news_item_icon"/>
+
+                </LinearLayout>
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_date"
+                    android:textSize="@dimen/news_item_title_text"
+                    android:paddingBottom="@dimen/news_item_title_padding_bottom"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    app:typeface="montserrat_light"/>
+
+                <smartassist.appreciate.be.smartassist.views.TextView
+                    android:id="@+id/textView_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_title"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="@dimen/news_line_spacing"
+                    app:typeface="montserrat_light"/>
+
+                <smartassist.appreciate.be.smartassist.views.Button
+                    android:id="@+id/button_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/poi_more"
+                    android:layout_alignParentBottom="true"
+                    app:typeface="montserrat_light"/>
+
+                <smartassist.appreciate.be.smartassist.views.Button
+                    android:id="@+id/button_fileDownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="@string/open_file"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    app:typeface="montserrat_light"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

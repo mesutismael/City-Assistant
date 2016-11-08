@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="@dimen/screen_saver_buttons_bar_width"
+        android:layout_height="match_parent"
+        android:padding="@dimen/screen_saver_buttons_bar_padding"
+        android:background="@color/screen_saver_buttons_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/imageView_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/screen_saver_button_height"
+                android:paddingLeft="@dimen/screen_saver_button_padding_horizontal"
+                android:paddingRight="@dimen/screen_saver_button_padding_horizontal"
+                android:paddingTop="@dimen/screen_saver_button_padding_vertical"
+                android:paddingBottom="@dimen/screen_saver_button_padding_vertical"
+                android:src="@drawable/ic_clock"/>
+
+            <ImageView
+                android:id="@+id/imageView_weather"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/screen_saver_button_height"
+                android:paddingLeft="@dimen/screen_saver_button_padding_horizontal"
+                android:paddingRight="@dimen/screen_saver_button_padding_horizontal"
+                android:paddingTop="@dimen/screen_saver_button_padding_vertical"
+                android:paddingBottom="@dimen/screen_saver_button_padding_vertical"
+                android:src="@drawable/ic_weather"/>
+
+            <ImageView
+                android:id="@+id/imageView_photos"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/screen_saver_button_height"
+                android:paddingLeft="@dimen/screen_saver_button_padding_horizontal"
+                android:paddingRight="@dimen/screen_saver_button_padding_horizontal"
+                android:paddingTop="@dimen/screen_saver_button_padding_vertical"
+                android:paddingBottom="@dimen/screen_saver_button_padding_vertical"
+                android:src="@drawable/ic_photos"/>
+
+        </LinearLayout>
+
+        <smartassist.appreciate.be.smartassist.views.TextClock
+            android:id="@+id/textClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/general_text_white"
+            android:textSize="@dimen/top_bar_text"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_screenSaver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/layout_buttons"/>
+
+</RelativeLayout>

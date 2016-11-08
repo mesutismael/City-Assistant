@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:orientation="horizontal">
+
+        <smartassist.appreciate.be.smartassist.views.TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|start"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/top_bar_text"
+            app:typeface="montserrat_light"
+            android:paddingLeft="@dimen/fragment_padding_left_right"
+            android:paddingTop="@dimen/fragment_padding_top_bottom"
+            android:paddingBottom="@dimen/fragment_padding_top_bottom"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/button_settings"
+            android:layout_width="@dimen/top_bar_back_image_width"
+            android:layout_height="@dimen/top_bar_back_image_height"
+            android:paddingLeft="@dimen/fragment_padding_left_right"
+            android:paddingRight="@dimen/fragment_padding_left_right"
+            android:paddingTop="@dimen/fragment_padding_top_bottom"
+            android:paddingBottom="@dimen/fragment_padding_top_bottom"
+            android:src="@drawable/ic_settings"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_topBar"/>
+
+</RelativeLayout>

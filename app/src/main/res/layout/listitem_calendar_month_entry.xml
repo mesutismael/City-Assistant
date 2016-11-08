@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_monthEntry"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/calendar_month_entry_min_height">
+
+    <View
+        android:id="@+id/view_selectedDay"
+        android:layout_width="@dimen/calendar_month_entry_selected_circle"
+        android:layout_height="@dimen/calendar_month_entry_selected_circle"
+        android:background="@drawable/shape_calendar_selected_day"
+        android:layout_centerInParent="true"/>
+
+    <smartassist.appreciate.be.smartassist.views.TextView
+        android:id="@+id/textView_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/calendar_month_day_text"
+        app:typeface="montserrat_light"/>
+
+    <View
+        android:id="@+id/view_habitant"
+        android:layout_width="@dimen/calendar_habitant_circle"
+        android:layout_height="@dimen/calendar_habitant_circle"
+        android:layout_below="@id/textView_day"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

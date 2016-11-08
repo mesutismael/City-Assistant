@@ -1,0 +1,98 @@
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/general_theme</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/general_background</item>
+        <item name="android:keepScreenOn">true</item>
+        <item name="android:textColorPrimary">@color/general_text</item>
+        <item name="android:buttonStyle">@style/SmartAssist.Button</item>
+        <item name="android:buttonStyleToggle">@style/SmartAssist.ToggleButton</item>
+        <item name="android:textViewStyle">@style/SmartAssist.TextView</item>
+
+        <item name="md_dark_theme">true</item>
+        <item name="md_background_color">@color/dialog_background</item>
+        <item name="md_title_color">@color/dialog_text</item>
+        <item name="md_content_color">@color/dialog_text</item>
+        <item name="md_positive_color">@color/selector_button_dialog_text</item>
+        <item name="md_neutral_color">@color/selector_button_dialog_text</item>
+        <item name="md_negative_color">@color/selector_button_dialog_text</item>
+        <item name="md_btn_positive_selector">@drawable/selector_button_dialog</item>
+        <item name="md_btn_neutral_selector">@drawable/selector_button_dialog</item>
+        <item name="md_btn_negative_selector">@drawable/selector_button_dialog</item>
+    </style>
+
+    <style name="SmartAssist"/>
+
+    <style name="SmartAssist.TextView" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/general_text</item>
+    </style>
+
+    <style name="SmartAssist.Button" parent="android:Widget.Button">
+        <item name="android:textColor">@color/selector_button_text</item>
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:paddingLeft">@dimen/button_padding_sides</item>
+        <item name="android:paddingRight">@dimen/button_padding_sides</item>
+        <item name="android:paddingTop">@dimen/button_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/button_padding_vertical</item>
+    </style>
+
+    <style name="SmartAssist.ToggleButton" parent="android:Widget.Button.Toggle">
+        <item name="android:textColor">@color/selector_toggle_text</item>
+        <item name="android:background">@drawable/selector_toggle</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:paddingLeft">@dimen/button_padding_sides</item>
+        <item name="android:paddingRight">@dimen/button_padding_sides</item>
+        <item name="android:paddingTop">@dimen/button_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/button_padding_vertical</item>
+    </style>
+
+    <style name="CalendarToggle">
+        <item name="android:textColor">@color/selector_calendar_toggle_text</item>
+        <item name="android:background">@drawable/selector_calendar_toggle</item>
+        <item name="android:minHeight">@dimen/calendar_toggle_min_height</item>
+        <item name="android:minWidth">@dimen/calendar_toggle_min_width</item>
+        <item name="android:paddingLeft">@dimen/calendar_toggle_padding_sides</item>
+        <item name="android:paddingRight">@dimen/calendar_toggle_padding_sides</item>
+        <item name="android:paddingTop">@dimen/calendar_toggle_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/calendar_toggle_padding_vertical</item>
+    </style>
+
+    <style name="SmartAssist.Button.Pin">
+        <item name="android:textColor">@color/pin_button_text</item>
+        <item name="android:background">@drawable/selector_button_pin_oval</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="SmartAssist.Oval">
+        <item name="android:background">@drawable/selector_button_oval_blue</item>
+        <item name="android:minHeight">@dimen/button_oval</item>
+        <item name="android:minWidth">@dimen/button_oval</item>
+        <item name="android:padding">@dimen/button_oval_colored_padding</item>
+    </style>
+
+    <style name="SmartAssist.Oval.Empty">
+        <item name="android:background">@drawable/selector_button_oval_blue_empty</item>
+    </style>
+
+    <style name="SmartAssist.Oval.Red">
+        <item name="android:background">@drawable/selector_button_oval_red</item>
+    </style>
+
+    <style name="SmartAssist.Oval.Button">
+        <item name="android:minWidth">@dimen/button_oval_min_size</item>
+        <item name="android:minHeight">@dimen/button_oval_min_size</item>
+        <item name="android:padding">@dimen/button_oval_padding</item>
+        <item name="android:background">@drawable/selector_button_oval</item>
+    </style>
+
+</resources>

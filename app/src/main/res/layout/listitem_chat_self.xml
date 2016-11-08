@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right">
+
+    <smartassist.appreciate.be.smartassist.views.BoundedLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right"
+        app:boundedWidth="@dimen/chat_max_width">
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_background_self"
+            android:paddingRight="@dimen/chat_self_box_padding_right"
+            android:paddingTop="@dimen/chat_box_padding"
+            android:paddingLeft="@dimen/chat_box_padding"
+            android:paddingBottom="@dimen/chat_box_padding"
+            android:textColor="@color/general_text_white"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/chat_date_text"
+            android:textColor="@color/chat_date_text"
+            android:layout_marginTop="@dimen/chat_date_margin_top"
+            android:layout_marginRight="@dimen/chat_self_box_padding_right"
+            app:typeface="montserrat_light"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/chat_date_text"
+            android:layout_marginRight="@dimen/chat_self_box_padding_right"
+            app:typeface="montserrat_light"/>
+
+    </smartassist.appreciate.be.smartassist.views.BoundedLinearLayout>
+
+</LinearLayout>

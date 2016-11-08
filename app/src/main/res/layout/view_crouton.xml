@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_crouton"
+        android:layout_width="@dimen/crouton_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/crouton_margin"
+        android:layout_marginRight="@dimen/crouton_margin"
+        android:padding="@dimen/crouton_padding">
+
+        <ImageView
+            android:id="@+id/imageView_icon"
+            android:layout_width="@dimen/news_item_icon"
+            android:layout_height="@dimen/news_item_icon"
+            android:layout_alignParentRight="true"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/news_item_icon"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/general_text_white"
+            android:textAllCaps="true"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/imageView_icon"
+            app:typeface="montserrat_regular"/>
+
+        <smartassist.appreciate.be.smartassist.views.TextView
+            android:id="@+id/textView_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="@color/general_text_white"
+            android:layout_below="@id/textView_title"
+            app:typeface="montserrat_light"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
